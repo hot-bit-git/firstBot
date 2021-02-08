@@ -1,0 +1,83 @@
+{
+    "_links": {
+        "data": {
+            "href": "https://horizon.stellar.org/accounts/GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH/data/{key}",
+            "templated": true
+        },
+        "effects": {
+            "href": "https://horizon.stellar.org/accounts/GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH/effects{?cursor,limit,order}",
+            "templated": true
+        },
+        "offers": {
+            "href": "https://horizon.stellar.org/accounts/GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH/offers{?cursor,limit,order}",
+            "templated": true
+        },
+        "operations": {
+            "href": "https://horizon.stellar.org/accounts/GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH/operations{?cursor,limit,order}",
+            "templated": true
+        },
+        "payments": {
+            "href": "https://horizon.stellar.org/accounts/GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH/payments{?cursor,limit,order}",
+            "templated": true
+        },
+        "self": {
+            "href": "https://horizon.stellar.org/accounts/GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH"
+        },
+        "trades": {
+            "href": "https://horizon.stellar.org/accounts/GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH/trades{?cursor,limit,order}",
+            "templated": true
+        },
+        "transactions": {
+            "href": "https://horizon.stellar.org/accounts/GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH/transactions{?cursor,limit,order}",
+            "templated": true
+        }
+    },
+    "account_id": "GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH",
+    "balances": [
+        {
+            "asset_code": "CENTUS",
+            "asset_issuer": "GAKMVPHBET4T7DPN32ODVSI4AA3YEZX2GHGNNSBGFNRQ6QEVKFO4MNDZ",
+            "asset_type": "credit_alphanum12",
+            "balance": "3794.4601089",
+            "buying_liabilities": "199.9999994",
+            "is_authorized": true,
+            "is_authorized_to_maintain_liabilities": true,
+            "last_modified_ledger": 33852387,
+            "limit": "922337203685.4775807",
+            "selling_liabilities": "151.8362114"
+        },
+        {
+            "asset_type": "native",
+            "balance": "67.7265485",
+            "buying_liabilities": "4.7773574",
+            "selling_liabilities": "5.9816796"
+        }
+    ],
+    "data": {},
+    "flags": {
+        "auth_immutable": false,
+        "auth_required": false,
+        "auth_revocable": false
+    },
+    "home_domain": "stellarterm.com",
+    "id": "GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH",
+    "last_modified_ledger": 33852387,
+    "last_modified_time": "2021-02-04T20:10:55Z",
+    "num_sponsored": 0,
+    "num_sponsoring": 0,
+    "paging_token": "GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH",
+    "sequence": "144566919851148368",
+    "signers": [
+        {
+            "key": "GD4FJH4UO2BVMXDYMJ6PODE7EVEDVP7SQR4ZSU227HPOIT4W4ITAP7UH",
+            "type": "ed25519_public_key",
+            "weight": 1
+        }
+    ],
+    "subentry_count": 5,
+    "thresholds": {
+        "high_threshold": 0,
+        "low_threshold": 0,
+        "med_threshold": 0
+    }
+}

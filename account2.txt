@@ -1,0 +1,20 @@
+[
+    {
+        "asset_code": "CENTUS",
+        "asset_issuer": "GAKMVPHBET4T7DPN32ODVSI4AA3YEZX2GHGNNSBGFNRQ6QEVKFO4MNDZ",
+        "asset_type": "credit_alphanum12",
+        "balance": "4706.3084964",
+        "buying_liabilities": "199.9999993",
+        "is_authorized": true,
+        "is_authorized_to_maintain_liabilities": true,
+        "last_modified_ledger": 33894521,
+        "limit": "922337203685.4775807",
+        "selling_liabilities": "200.0000000"
+    },
+    {
+        "asset_type": "native",
+        "balance": "45.8981053",
+        "buying_liabilities": "5.5252600",
+        "selling_liabilities": "5.0283005"
+    }
+]

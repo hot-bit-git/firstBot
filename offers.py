@@ -1,3 +1,4 @@
+# import json
 import time
 from stellar_sdk import Server
 
@@ -11,12 +12,19 @@ key_embedded = '_embedded'
 key_records = 'records'
 
 
+def name_of_cryptocurrency(in_offers_data):
+    if in_offers_data['asset_type'] == 'native':
+        return 'XLM'
+    elif in_offers_data['asset_type'] == 'credit_alphanum4':
+        return in_offers_data['asset_code']
+
+
 def selling_buying_offer(account_id):
     offers = server.offers().for_seller(account_id).call()
     offers_data = offers[key_embedded][key_records]
 
     # For control
-    # print(json.dumps(offers_data, indent=4))
+    # print(json.dumps(offers, indent=4))
 
     for i in range(len(offers_data)):
 
@@ -28,7 +36,7 @@ def selling_buying_offer(account_id):
         sentence += "sells "
         sentence += offers_data[i]['amount']
         sentence += ' '
-        sentence += offers_data[i]['selling']['asset_type']
+        sentence += name_of_cryptocurrency(offers_data[i]['selling'])
         sentence += ' '
 
         sentence += 'for the price of '
@@ -36,7 +44,7 @@ def selling_buying_offer(account_id):
         sentence += ' '
 
         sentence +='of '
-        sentence += offers_data[i]['buying']['asset_type']
+        sentence += name_of_cryptocurrency(offers_data[i]['buying'])
 
         print(sentence)
 

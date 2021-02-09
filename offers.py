@@ -5,7 +5,10 @@ from stellar_sdk import Server
 
 server = Server(horizon_url="https://horizon.stellar.org")
 account_id = "GCSQRCJR77FHDITYON46VO5J47ZEOD5HXNM6FL3LJNTXAQ4D53G5DW6C"
+account_name = 'Kozak'
 
+account_id = "GA5OGZYOBTXBWTE5A6LXUCCWMUP7LYIS252DGEKBQ4IMFMKPTVMEK7LA"
+account_name = 'JakieśKonto'
 
 key_last_modified_time = 'last_modified_time'
 key_embedded = '_embedded'
@@ -32,8 +35,8 @@ def selling_buying_offer(account_id):
 
         sentence += offers_data[i]['last_modified_time']
         sentence += ' '
-        sentence += 'Kozak '
-        sentence += "sells "
+        sentence += account_name
+        sentence += " sells "
         sentence += offers_data[i]['amount']
         sentence += ' '
         sentence += name_of_cryptocurrency(offers_data[i]['selling'])

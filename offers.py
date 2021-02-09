@@ -1,4 +1,4 @@
-# import json
+import json
 import time
 from stellar_sdk import Server
 
@@ -15,7 +15,7 @@ key_records = 'records'
 def name_of_cryptocurrency(in_offers_data):
     if in_offers_data['asset_type'] == 'native':
         return 'XLM'
-    elif in_offers_data['asset_type'] == 'credit_alphanum4':
+    else:
         return in_offers_data['asset_code']
 
 
@@ -24,7 +24,7 @@ def selling_buying_offer(account_id):
     offers_data = offers[key_embedded][key_records]
 
     # For control
-    # print(json.dumps(offers, indent=4))
+    print(json.dumps(offers, indent=4))
 
     for i in range(len(offers_data)):
 

@@ -99,7 +99,8 @@ def selling_buying_offer(account_id):
 
 
 while True:
-    print('\n')
+
+    print('Start')
     selling_buying_offer(account_id)
     print('\n')
     values_of_pair()

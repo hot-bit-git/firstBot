@@ -23,7 +23,7 @@ def values_of_pair(in_name_of_pair='XLM_XRP'):
 
 
 name_of_pair = 'XLM_XRP'
-values_of_pair(name_of_pair)
+# values_of_pair(name_of_pair)
 
 
 
